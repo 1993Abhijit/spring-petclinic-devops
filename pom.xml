@@ -244,7 +244,7 @@
               <configLocation>src/checkstyle/nohttp-checkstyle.xml</configLocation>
               <sourceDirectories>${basedir}</sourceDirectories>
               <includes>**/*</includes>
-              <excludes>**/.git/**/*,**/.idea/**/*,**/target/**/,**/.flattened-pom.xml,**/*.class</excludes>
+              <excludes>**/.git/**/*,**/.idea/**/*,**/target/**/,**/.flattened-pom.xml,**/*.class,**/pom.xml</excludes>
               <propertyExpansion>config_loc=${basedir}/src/checkstyle/</propertyExpansion>
             </configuration>
           </execution>
@@ -308,7 +308,7 @@
     </plugins>
   </build>
   
-  <!-- Added for Nexus deploy -->
+  <!-- Nexus deploy config -->
   <distributionManagement>
     <repository>
       <id>nexus</id>
